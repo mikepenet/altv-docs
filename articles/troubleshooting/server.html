@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Someone needs to contribute here </title>
+    <title>Troubleshoot Server </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Someone needs to contribute here ">
+    <meta name="title" content="Troubleshoot Server ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -133,8 +133,27 @@
                                     </ul>
                                 </span>
 
-<h1 id="someone-needs-to-contribute-here">Someone needs to contribute here</h1>
+<h1 id="troubleshoot-server">Troubleshoot Server</h1>
 
+<p>Sometimes when you are running a server, some issues can occur. Most of these issues are repetitive and easy to solve. Therefore, this article collects the most common errors and their solutions.</p>
+<h2 id="known-issues--solutions">Known issues &amp; solutions</h2>
+<h4 id="warning-to-load-an-es-module-set-type-module-in-the-packagejson-or-use-the-mjs-extension">Warning: To load an ES module, set &quot;type&quot;: &quot;module&quot; in the package.json or use the .mjs extension.</h4>
+<p>This issue is caused by missing the <code>type</code> configuration inside your package.json. To solve this problem you need to add <code>&quot;type&quot;:&quot;module&quot;</code> in your package.json</p>
+<h4 id="failed-to-load-js-moduledll-win32-error-127-7f">Failed to load &quot;js-module.dll&quot; Win32 error: 127 (7f)</h4>
+<p>If you head into your alt:V server directory, you will most likely find a <code>libnode.dll</code> file. In order to solve this issue, you need to delete this file.</p>
+<h4 id="module-outdated-module-uses-sdk-vxx-server-requires-sdk-vxx">Module outdated, module uses SDK vXX, server requires SDK vXX</h4>
+<p>You will sometimes get this error especially if there is a new release. Usually, it is enough to update your server by downloading the latest alt:V server files which include the latest <code>csharp-module.dll</code> or <code>js-module.dll</code>.</p>
+<h4 id="error-while-reading-servercfg-on-line-xx-column-reason-invalid-token">Error while reading server.cfg on line xx, column. Reason: invalid token</h4>
+<p>This issue mostly occurs when strings are not put in double quotes. For example, the URL of your website is not put in double quotes inside the <code>server.cfg</code> will cause this issue. To find the issue inside your<code>server.cfg</code> you should pay attention to the error message which gives you the exact line.</p>
+<h4 id="master-server-connect-failed-invalid-token">Master server connect failed. Invalid token</h4>
+<p>Inside your <code>server.cfg</code> you can find a configuration variable called <code>announce</code>. If this is set to <code>true</code>, you will need a <strong>valid</strong> token. Therefore, you need to request a master list token from the alt:V Master-Bot. To receive a token, you need to send a single message with the content &quot;token&quot; to <code>Master-Bot#3667</code> on discord. To obtain a token you have to meet one of the following requirements:</p>
+<ol>
+<li>You can obtain a token for broadcasting to the master list by waiting 30 days to generate one.</li>
+<li>You can obtain a token immediately by subscribing as a Bronze Patreon to generate your token. If you would like to go down this route you can visit <a href="https://www.patreon.com/altVMP">https://www.patreon.com/altVMP</a> to subscribe.</li>
+</ol>
+<p>Keep in mind that you usually do not need a master list announcement while you are in the development stage. You can set the <code>announce</code> flag to <code>false</code> inside your <code>server.cfg</code>.</p>
+<h4 id="unhandled-exception-received-an-unhandled-exception-from-">Unhandled Exception: Received an unhandled exception from: ...</h4>
+<p>When you use C# on your server-side, you will encounter this problem sometimes. You can easily solve this problem by updating the alt:V NuGet packages and rebuilding your resource.</p>
 </article>
                     </div>
 
