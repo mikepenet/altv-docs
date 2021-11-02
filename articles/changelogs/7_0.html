@@ -149,7 +149,6 @@
 <pre><code class="lang-yaml">- alt.Blip.all getter
 - ping getter
 - fps getter
-- totalPacketsSent &amp; totalPacketsLost getter
 - refCount getter (debug-mode only)
 - help button in main menu, which points to the troubleshooting guide
 - native arg missmatch to resourceError event
@@ -183,20 +182,20 @@
 - playAmbientSpeech for player
 - player appearance setter &amp; getter
 - player getters
--  -&gt; isShooting
--  -&gt; isJumping
 -  -&gt; isReloading
 -  -&gt; currentWeaponTintIndex
 -  -&gt; isSuperJumpEnabled
 -  -&gt; isCrouching
 -  -&gt; isStealthy
+-  -&gt; weapons
 - vehicles getter
 -  -&gt; driftModeEnabled
 - vehicles setter
 -  -&gt; driftModeEnabled
--  -&gt; setSearchLightTo
+-  -&gt; setSearchLightTo (entity parameter isn't working for now)
 - Trains api
 - console.log, console.warn and console.error uses now the alt:V log functions
+- beforePlayerConnect event
 </code></pre>
 </div>
 <h3 id="fixed-1">Fixed</h3>
