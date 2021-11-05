@@ -314,6 +314,27 @@
     "keywords": "View Source Improve this Doc Class ChannelTickSchedulerFactory Inheritance System.Object ChannelTickSchedulerFactory Implements ITickSchedulerFactory Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : AltV.Net.Async Assembly : AltV.Net.Async.dll Syntax public class ChannelTickSchedulerFactory : ITickSchedulerFactory Methods | Improve this Doc View Source Create(Thread) Declaration public ITickScheduler Create(Thread mainThread) Parameters Type Name Description System.Threading.Thread mainThread Returns Type Description ITickScheduler Implements ITickSchedulerFactory",
     "langs": "csharp cs vb"
   },
+  "cs/api/AltV.Net.Async.CodeGen.AsyncEntityGenerator.html": {
+    "type": "api",
+    "href": "cs/api/AltV.Net.Async.CodeGen.AsyncEntityGenerator.html",
+    "title": "Class AsyncEntityGenerator",
+    "keywords": "View Source Improve this Doc Class AsyncEntityGenerator Inheritance System.Object AsyncEntityGenerator Namespace : AltV.Net.Async.CodeGen Assembly : AltV.Net.Async.CodeGen.dll Syntax public class AsyncEntityGenerator : ISourceGenerator Methods | Improve this Doc View Source Execute(GeneratorExecutionContext) Declaration public void Execute(GeneratorExecutionContext context) Parameters Type Name Description GeneratorExecutionContext context | Improve this Doc View Source Initialize(GeneratorInitializationContext) Declaration public void Initialize(GeneratorInitializationContext context) Parameters Type Name Description GeneratorInitializationContext context",
+    "langs": "csharp cs vb"
+  },
+  "cs/api/AltV.Net.Async.CodeGen.Diagnostics.html": {
+    "type": "api",
+    "href": "cs/api/AltV.Net.Async.CodeGen.Diagnostics.html",
+    "title": "Class Diagnostics",
+    "keywords": "View Source Improve this Doc Class Diagnostics Inheritance System.Object Diagnostics Namespace : AltV.Net.Async.CodeGen Assembly : AltV.Net.Async.CodeGen.dll Syntax public static class Diagnostics : object Fields | Improve this Doc View Source AsyncEntityClassShouldBePartial Declaration public static DiagnosticDescriptor AsyncEntityClassShouldBePartial Field Value Type Description DiagnosticDescriptor | Improve this Doc View Source AsyncEntityGetterNotFound Declaration public static DiagnosticDescriptor AsyncEntityGetterNotFound Field Value Type Description DiagnosticDescriptor | Improve this Doc View Source AsyncEntityInterfaceMethodNotFoundInClass Declaration public static DiagnosticDescriptor AsyncEntityInterfaceMethodNotFoundInClass Field Value Type Description DiagnosticDescriptor | Improve this Doc View Source AsyncEntityInterfacePropertyNotFoundInClass Declaration public static DiagnosticDescriptor AsyncEntityInterfacePropertyNotFoundInClass Field Value Type Description DiagnosticDescriptor | Improve this Doc View Source AsyncEntityInterfaceShouldBePartial Declaration public static DiagnosticDescriptor AsyncEntityInterfaceShouldBePartial Field Value Type Description DiagnosticDescriptor | Improve this Doc View Source AsyncEntitySetterNotFound Declaration public static DiagnosticDescriptor AsyncEntitySetterNotFound Field Value Type Description DiagnosticDescriptor | Improve this Doc View Source AsyncEntityShouldImplementEntity Declaration public static DiagnosticDescriptor AsyncEntityShouldImplementEntity Field Value Type Description DiagnosticDescriptor | Improve this Doc View Source AsyncEntityShouldImplementInterface Declaration public static DiagnosticDescriptor AsyncEntityShouldImplementInterface Field Value Type Description DiagnosticDescriptor",
+    "langs": "csharp cs vb"
+  },
+  "cs/api/AltV.Net.Async.CodeGen.html": {
+    "type": "api",
+    "href": "cs/api/AltV.Net.Async.CodeGen.html",
+    "title": "Namespace AltV.Net.Async.CodeGen",
+    "keywords": "Namespace AltV.Net.Async.CodeGen Classes AsyncEntityGenerator Diagnostics",
+    "langs": "csharp cs vb"
+  },
   "cs/api/AltV.Net.Async.DefaultAsyncResource.html": {
     "type": "api",
     "href": "cs/api/AltV.Net.Async.DefaultAsyncResource.html",
